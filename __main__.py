@@ -6,7 +6,7 @@ def main():
     config = c("config.toml")
     reddit = r(config.reddit_config())
     for submission in reddit.return_new_instance():
-        reddit.check_instance(submission)
+        print(reddit.check_submission_time(submission))
 
 
 if __name__ == "__main__":
