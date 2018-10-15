@@ -5,7 +5,7 @@ import os
 
 
 def main():
-    config = c(os.path.join(os.path.abspath(__file__), "config.toml"))
+    config = c(os.path.join(os.getcwd(), "config.toml"))
     reddit = r(config.reddit_config())
     database = db(config.db_config())
     while True:
