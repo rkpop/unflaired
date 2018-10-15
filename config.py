@@ -1,4 +1,5 @@
 from toml import load as lo
+import os
 
 
 class config:
@@ -9,4 +10,9 @@ class config:
         return self.configfile["Reddit"]
 
     def db_config(self):
-        return self.configfile["sqlite3"]["filename"]
+        return os.path.join(
+            os.getcwd(),
+            "scripts",
+            "unflaired",
+            self.configfile["sqlite3"]["filename"],
+        )
