@@ -9,4 +9,4 @@ class config:
         return self.configfile["Reddit"]
 
     def db_config(self):
-        return self.configfile["sqlite3"]
+        return self.configfile["sqlite3"]["filename"]

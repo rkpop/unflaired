@@ -6,7 +6,7 @@ from database import database as db
 def main():
     config = c("config.toml")
     reddit = r(config.reddit_config())
-    database = db(config.db_config()["filename"])
+    database = db(config.db_config())
     while True:
         submissions = reddit.return_new_instance()
         for submission in submissions:
