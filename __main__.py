@@ -1,10 +1,11 @@
 from reddit import reddit as r
 from config import config as c
 from database import database as db
+import os
 
 
 def main():
-    config = c("config.toml")
+    config = c(os.path.join(os.path.abspath(__file__), "config.toml"))
     reddit = r(config.reddit_config())
     database = db(config.db_config())
     while True:
