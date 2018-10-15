@@ -141,3 +141,4 @@ pip-selfcheck.json
 
 # Project specific config
 config.toml
+reports.db
