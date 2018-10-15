@@ -7,3 +7,6 @@ class config:
 
     def reddit_config(self):
         return self.configfile["Reddit"]
+
+    def db_config(self):
+        return self.configfile["sqlite3"]
