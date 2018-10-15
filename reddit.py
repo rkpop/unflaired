@@ -24,8 +24,13 @@ class reddit:
         return submission.link_flair_text is None
 
     def report_submission(self, submission):
-        submission.report("Post is not flaired after one hour.")
-        return submission
+        submission.report("Post missing flair after one hour.")
+        return None
+
+    def new_time(self):
+        self.current_time = now("UTC")
 
     def _time_difference(self, submission_time):
-        return self.current_time.diff(from_timestamp(submission_time)).in_hours()
+        return self.current_time.diff(
+            from_timestamp(submission_time)
+        ).in_hours()
