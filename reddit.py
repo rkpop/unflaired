@@ -18,7 +18,7 @@ class reddit:
         return self.subreddit.new()
 
     def check_submission_time(self, submission):
-        return self._time_difference(submission.created_utc) > 1
+        return self._time_difference(submission.created_utc) >= 1
 
     def check_submission_flair(self, submission):
         return submission.link_flair_text is None
