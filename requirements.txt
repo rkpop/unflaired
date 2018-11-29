@@ -15,7 +15,7 @@ praw==6.0.0
 prawcore==1.0.0
 pylint==2.1.1
 python-dateutil==2.7.3
-pytz==2018.5
+pytz==2018.7
 pytzdata==2018.5
 regex==2018.8.29
 requests==2.19.1
