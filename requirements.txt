@@ -17,7 +17,7 @@ pylint==2.1.1
 python-dateutil==2.7.3
 pytz==2018.5
 pytzdata==2018.5
-regex==2018.8.29
+regex==2020.5.7
 requests==2.19.1
 six==1.11.0
 snaptime==0.2.4
